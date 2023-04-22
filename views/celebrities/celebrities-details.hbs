@@ -1,0 +1,14 @@
+<h2 >Details of the celebrity</h2>
+ <div class="card-body">
+    <p>Name: {{name}}</p>
+        <p>Occupation: {{occupation}}</p>
+            <p>Catch phrase: {{catchPhrase}}</p>
+                    <div >
+                        <form action="/celebrities/{{id}}/delete" method="POST">
+                            <input type="submit" value="Delete movie" class="btn btn-danger btn-sm">
+                            </form>
+                        </div>
+                        <div >
+                            <a href="/celebrities/{{id}}/edit" class="btn btn-dark btn-sm">Edit celebrity</a>
+                        </div>
+    <a href="/celebrities" class="btn btn-dark btn-lg mt-4">Back</a>
